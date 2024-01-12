@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/AVasilaki/goit-node-cli/issues"
   },
-  "homepage": "https://github.com/AVasilaki/goit-node-cli#readme"
+  "homepage": "https://github.com/AVasilaki/goit-node-cli#readme",
+  "dependencies": {
+    "commander": "^11.1.0"
+  }
 }
