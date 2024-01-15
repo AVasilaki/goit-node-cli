@@ -35,6 +35,8 @@ async function invokeAction({ action, id, name, email, phone }) {
 
     case "remove":
       // ... id
+      const removeContact = await contacts.removeContact(id);
+      console.log(removeContact);
       break;
 
     default:
@@ -44,4 +46,5 @@ async function invokeAction({ action, id, name, email, phone }) {
 
 // invokeAction({ action: "list" });
 // invokeAction({ action: "get", id: "qdggE76Jtbfd9eWJHrssH" });
-invokeAction({ action: "add", name: "victoria", email: "victoria@.com", phone: "223-44-33" });
+// invokeAction({ action: "add", name: "victoria", email: "victoria@.com", phone: "223-44-33" });
+invokeAction({ action: "remove", id: "Vme2Wl9lwgInLXFPFN4sO" });
